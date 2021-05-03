@@ -32,11 +32,19 @@ const person = {
 		);
 	},
 	getTheLength: function () {
-		return Object.keys(this).length;
+        let number = 0; 
+        for (const key in this){
+            number++
+        }
+        return number;
 	},
 }
 
 person.properties();
 console.log(person.getTheLength());
 
+
+
+
+		// return Object.keys(this).length;
 
